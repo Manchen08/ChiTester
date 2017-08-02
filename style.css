@@ -1,0 +1,81 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+td, .border {
+	border: 2px solid black;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-align: center; 
+	background-color: #5F9EA0;
+	padding: 5px;
+}
+
+td {
+  font-size: 20px;
+  cursor: hand; cursor: pointer;
+}
+
+#container {
+	width: 90%;
+	margin: 10px auto;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid gray;
+	line-height: 130%;
+}
+
+#header {
+	padding: .5em;
+	background-color: #ddd;
+	border-bottom: 1px solid gray;
+}
+
+#header h1 {
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar {
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 1em;
+	border-right: 1px solid gray;
+}
+
+#content {
+	margin-left: 240px;
+	padding: 1em;
+	max-width: 36em;
+}
+
+/* TODO Make sure that the footer clears the content */
+#footer {
+  clear: both;
+	margin: 0;
+	padding: .5em;
+	color: #333;
+	background-color: #ddd;
+	border-top: 1px solid gray;
+}
+
+.metalsImportant { 
+  background-color: #5F9EA0 !important; 
+}
+.metalloidsImportant { 
+  background-color: #FF4500 !important; 
+}
+.nonmetalsImportant { 
+  background-color: #FFE4C4 !important; 
+}
+
+.white { 
+  background-color: #FFFFFF !important;
+  border: none;
+}

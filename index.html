@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html ng-app="tableApp">
+<head>
+    <meta charset="utf-8">
+    <title>Periodic Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="TableController.js"></script>
+</head>
+<body ng-controller="PerTableController">
+    <div id="container">
+	    
+	    <div id="header">
+	    	<h1>Periodic Table</h1>
+	    </div>
+	    
+	    <div id="sidebar">
+			<div id="legend">
+				<h2>Legend</h2>
+				<p class="border">Metals</p>
+				<p>A solid substance that is a good cborderonductor of eat and electicity. Can be formed into many shapes.</p>
+				
+				<p class="border metalloidsImportant">Metalloid</p>
+				<p>"Middle elements" - conduct heat and electricity better than nonmetals, 
+					but not as well as metals. Easier to shape than nonmetals, but not as easy as metals.  
+					Solid at room temperature.</p>
+			
+				<p  class="border nonmetalsImportant">Nonmetals</p>
+				<p>A poor conductor of heat and electricity.  Not easily formed into shapes.</p>
+			</div>
+	    </div>
+	    
+	    <div id="content">
+	    	<h2>Elements</h2>
+	    	<table id="periodic">
+	    		<tr>
+	    			<td class="nonmetalsImportant">H</td>
+	    			<td class="white" colspan="16"></td>
+	    			<td class="nonmetalsImportant">He</td>
+	    		</tr>
+	    		<tr>
+	    			<td>Li</td>
+	    			<td>Be</td>
+	    			<td class="white" colspan="10"></td>
+	    			<td class="metalloidsImportant">B</td>
+	    			<td class="nonmetalsImportant">C</td>
+	    			<td class="nonmetalsImportant">N</td>
+	    			<td class="nonmetalsImportant">O</td>
+	    			<td class="nonmetalsImportant">F</td>
+	    			<td class="nonmetalsImportant">Ne</td>
+	    		</tr>
+	    		<tr>
+	    			<td>Na</td>
+	    			<td>Mg</td>
+	    			<td class="white" colspan="10"></td>
+	    			<td>Al</td>
+	    			<td class="metalloidsImportant">Si</td>
+	    			<td class="nonmetalsImportant">P</td>
+	    			<td class="nonmetalsImportant">S</td>
+	    			<td class="nonmetalsImportant">Cl</td>
+	    			<td class="nonmetalsImportant">Ar</td>
+	    		</tr>
+	    		<tr>
+	    			<td>K</td>
+	    			<td>Ca</td>
+	    			<td>Sc</td>
+	    			<td>Ti</td>
+	    			<td>V</td>
+	    			<td>Cr</td>
+	    			<td>Mn</td>
+	    			<td>Fe</td>
+	    			<td>Co</td>
+	    			<td>Ni</td>
+	    			<td>Cu</td>
+	    			<td>Zn</td>
+	    			<td>Ga</td>
+	    			<td class="metalloidsImportant">Ge</td>
+	    			<td class="metalloidsImportant">As</td>
+	    			<td class="nonmetalsImportant">Se</td>
+	    			<td class="nonmetalsImportant">Br</td>
+	    			<td class="nonmetalsImportant">Kr</td>
+	    		</tr>
+	    		<tr>
+	    			<td>Rb</td>
+	    			<td>Sr</td>
+	    			<td>Y</td>
+	    			<td>Zr</td>
+	    			<td>Nb</td>
+	    			<td>Mo</td>
+	    			<td>Tc</td>
+	    			<td>Ru</td>
+	    			<td>Rh</td>
+	    			<td>Pd</td>
+	    			<td>Ag</td>
+	    			<td>Cd</td>
+	    			<td>In</td>
+	    			<td>Sn</td>
+	    			<td class="metalloidsImportant">Sb</td>
+	    			<td class="metalloidsImportant">Te</td>
+	    			<td class="nonmetalsImportant">I</td>
+	    			<td class="nonmetalsImportant">Xe</td>
+	    		</tr>
+	    		<tr>
+	    			<td>Cs</td>
+	    			<td>Ba</td>
+	    			<td>La</td>
+	    			<td>Hf</td>
+	    			<td>Ta</td>
+	    			<td>W</td>
+	    			<td>Re</td>
+	    			<td>Os</td>
+	    			<td>Ir</td>
+	    			<td>Pt</td>
+	    			<td>Au</td>
+	    			<td>Hg</td>
+	    			<td>Tl</td>
+	    			<td>Pb</td>
+	    			<td>Bi</td>
+	    			<td>Po</td>
+	    			<td class="metalloidsImportant">At</td>
+	    			<td class="nonmetalsImportant">Rn</td>
+	    		</tr>
+	    		<tr>
+	    			<td>Fr</td>
+	    			<td>Ra</td>
+	    			<td>Ac</td>
+	    			<td>Unq</td>
+	    			<td>Unp</td>
+	    			<td>Unh</td>
+	    			<td>Uns</td>
+	    			<td>Uno</td>
+	    			<td>Une</td>
+	    			<td class="white" colspan="9"></td>
+	    		</tr>
+	    		<tr>
+	    			<td>Ce</td>
+	    			<td>Pr</td>
+	    			<td>Nd</td>
+	    			<td>Pm</td>
+	    			<td>Sm</td>
+	    			<td>Eu</td>
+	    			<td>Gd</td>
+	    			<td>Tb</td>
+	    			<td>Dy</td>
+	    			<td>Ho</td>
+	    			<td>Er</td>
+	    			<td>Tm</td>
+	    			<td>Yb</td>
+	    			<td>Lu</td>
+	    			<td class="white" colspan="4"></td>
+	    		</tr>
+	    		<tr>
+	    			<td>Th</td>
+	    			<td>Pa</td>
+	    			<td>U</td>
+	    			<td>Np</td>
+	    			<td>Pu</td>
+	    			<td>Am</td>
+	    			<td>Cm</td>
+	    			<td>Bk</td>
+	    			<td>Cf</td>
+	    			<td>Es</td>
+	    			<td>Fm</td>
+	    			<td>Md</td>
+	    			<td>No</td>
+	    			<td>Lr</td>
+	    			<td class="white" colspan="4"></td>
+	    		</tr>
+	    	</table>
+	    	
+	    	<div id="elementProperties"></div>  
+	    </div>
+	    <div id="footer">
+	    	&copy;2013 Weber State University
+	    </div>
+    </div>
+    
+    
+    	<script src="script.js"></script>
+</body>
+</html>
